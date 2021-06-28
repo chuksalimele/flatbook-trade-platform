@@ -54,8 +54,8 @@ module.exports = {
      * Server https port used in development
      * @type Number
      */
-    DEV_HTTPS_PORT: 446,
-    //DEV_HTTPS_PORT: 443,//USE THIS LINE WHEN TESTING WITH ADMIN
+    //DEV_HTTPS_PORT: 446,
+    DEV_HTTPS_PORT: 443,//USE THIS LINE WHEN TESTING WITH ADMIN
     /**
      * Server http port used in production
      * @type Number
