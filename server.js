@@ -889,7 +889,7 @@ adminRoute.post('/admin_query/current_rebate', function (req, res) {
 //----------create http server to redirect to https -------------------
 var httpServer = http.createServer(function (req, res) {
     //var req_host = req.headers['host'];//no need anyway
-    res.writeHead(301, {"Location": "https://" + sObj.host() + req.url});
+    res.writeHead(301, {"Location": "https://" + httpServer.address().address + req.url});
     res.end();
 });
 
