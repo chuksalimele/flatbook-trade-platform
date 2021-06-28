@@ -931,12 +931,12 @@ app.get('/*', function (req, res) {
 
 
 //listen for https connections
-secureHttpServer.listen(sObj.secureHttpPort(), sObj.host(), function () {
+secureHttpServer.listen(sObj.secureHttpPort(), function () {
     console.log('listening on :' + sObj.host() + ":" + sObj.secureHttpPort());
 });
 
 //listen for http connections
-httpServer.listen(sObj.httpPort(), sObj.host(), function () {
+httpServer.listen(sObj.httpPort(), function () {
     console.log('listening on :' + sObj.host() + ":" + sObj.httpPort());
 });
 
